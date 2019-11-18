@@ -1,0 +1,92 @@
+.boxA {
+width: 20%;
+height: 100px;
+background-color: red;
+line-height: 100px;
+text-align: center;
+font-size: 30px;
+}
+.boxB {
+    width: 80%;
+    height: 100px;
+    line-height: 100px;
+    background-color: green;
+    text-align: center;
+    font-size: 30px;
+}
+#part1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#part2 {
+    height: 70px;
+    line-height: 70px;
+    background-color: greenyellow;
+    text-align: center;
+    font-size: 30px;
+}
+.boxC {
+    width: 35%;
+    height: 150x;
+    line-height: 150px;
+    background-color: blue;
+    text-align: center;
+    font-size: 30px; 
+    padding-bottom: 40px;
+
+}
+.boxD {
+    width: 30%;
+    height: 150x;
+    line-height: 150px;
+    background-color: grey;
+    text-align: center;
+    font-size: 30px;
+}
+.boxE {
+    width: 35%;
+    height: 150x;
+    line-height: 150px;
+    background-color: pink;
+    text-align: center;
+    font-size: 30px;
+}
+#part3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.boxF {
+    width: 85%;
+    height: 500px;
+    line-height: 500px;
+    background-color: lightgreen;
+    text-align: center;
+    font-size: 30px;
+}
+.boxG {
+    width: 15%;
+    height: 500px;
+    line-height: 50%;
+   background-color: darkolivegreen;
+    font-size: 30px;
+    text-align: center;
+    
+ }
+#part4 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+#part5 {
+    height: 70px;
+    line-height: 70px;
+    background-color: lightskyblue;
+    text-align: center;
+    font-size: 30px;
+}
+p {
+    padding-top: 50%;   
+}

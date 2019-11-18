@@ -1,0 +1,21 @@
+.bg-blue {
+    background-color: blue;
+}
+.w-100 {
+    width: 100%;
+}
+.h-500 {
+    height: 500px;
+}
+.box {
+width: 200px;
+height: 200px;
+background-color: chartreuse;
+margin: 20px;
+}
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
