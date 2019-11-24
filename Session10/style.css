@@ -1,0 +1,32 @@
+#title {
+    background-color: pink;
+    width: 100%;
+    height: 80px;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+}
+.category {
+   width: 25%;
+    height: 265px;
+    padding: 10px;
+    margin: 20px;
+}
+.catagory-title {
+    text-align: center;
+    font-size: 40px;
+}
+.item {
+    display: flex;
+    justify-content: space-between;
+}
+.item-title, item-price {
+     margin-top: 10px;
+     margin-bottom: 10px;
+}
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: lightgreen;
+}
