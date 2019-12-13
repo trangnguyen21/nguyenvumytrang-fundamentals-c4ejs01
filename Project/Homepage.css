@@ -1,0 +1,19 @@
+.header-container {
+    margin: 0 auto;
+    width: 100%;
+}
+.header-container ul {
+    margin: 0%;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+.header-container ul li{
+    float: none;
+    display: inline-block;
+}
+.header-container ul li:nth-child(1) {
+    float: left;
+    font-family: Satisfy;
+    font-size: 22px;
+}

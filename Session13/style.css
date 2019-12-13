@@ -1,0 +1,27 @@
+#root {
+    display: flex;
+    justify-content: center;
+
+}
+
+#title p {
+    text-align: center;
+    font-size: 30px;
+}
+#option {
+    display: flex;
+}
+#option div {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+#songs-content {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+.song {
+    width: 40px;
+}
