@@ -1,154 +1,154 @@
-$('#myModal').on('shown.bs.modal', function () {
-    $('#myInput').trigger('focus')
-  })
-  const MatchTravel =[
-    {   name: "G1",
+$('#exampleModalCenter').modal('show');
+
+const travel =[
+    G1 ={
+        name :"G1",
         place :"Miền núi phía bắc",
-        time :" Mùa xuân",
+        time :"Mùa xuân",
         age : "Dưới 25 tuổi",
     },
-    {
-        name: "G2",
+    G2 ={
+        name :"G2",
         place :"Miền núi phía bắc",
         time :"Mùa hạ",
         age : "Dưới 25 tuổi",
     },
-    {
-        name: "G3",
-        place :"Miền núi phía bắc",
-        time :"Mùa hạ ",
-        age : "Dưới 25 tuổi",
-    },
-    {
-        name: "G4",
-        place :"Miền núi phía bắc",
-        time :"Mùa thu",
-        age : "Dưới 25 tuổi",
-    },
-    {
-        name: "G5",
-        place :"Miền núi phía bắc",
-        time :"Mùa xuân",
-        age : "Dưới 25 tuổi",
-    },
-    {
-        name: "G6",
+    G3 ={
+        name :"G3",
         place :"Miền núi phía bắc",
         time :"Mùa thu",
         age :"Dưới 25 tuổi",
     },
-    {
-        name: "G7",
+    G4 ={
+        name :"G4",
         place :"Miền núi phía bắc",
         time :"Mùa đông",
         age :"Dưới 25 tuổi",
     },
-    {
-        name: "G8",
-        place :"Miền núi phía bắc",
+    G5 ={
+        name :"G5",
+        place :"Duyên hải miền trung",
+        time :"Mùa xuân",
+        age :"Dưới 25 tuổi",
+    },
+    G6 ={
+        name :"G6",
+        place :"Duyên hải miền trung",
+        time :"Mùa hạ",
+        age :"Dưới 25 tuổi",
+    },
+    G7 ={
+        name :"G7",
+        place :"Duyên hải miền trung",
+        time :"Mùa thu",
+        age :"Dưới 25 tuổi",
+    },
+    G8 ={
+        name :"G8",
+        place :"Duyên hải miền trung",
         time :"Mùa đông",
         age :"Dưới 25 tuổi",
     },
-    {
-        name: "G9",
-        place :"Duyên hải miền trung",
+    G9 ={
+        name :"G9",
+        place :"Đồng bằng nam bộ",
         time :"Mùa xuân",
         age :"Dưới 25 tuổi",
     },
-    {
-        name: "G10",
-        place :"Duyên hải miền trung",
-        time :"Mùa xuân",
+    G10 ={
+        name :"G10",
+        place :"Đồng bằng nam bộ",
+        time :"Mùa hạ",
         age :"Dưới 25 tuổi",
     },
-    {
-        name: "G11",
-        place :"Duyên hải miền trung",
-        time :"Mùa hạ ",
-        age :"Dưới 25 tuổi",
-    },
-    {
-        name: "G12",
-        place :"Duyên hải miền trung",
-        time :"Mùa hạ ",
-        age :"Dưới 25 tuổi",
-    },
-    {
-        name: "G13",
-        place :"Duyên hải miền trung",
+    G11 ={
+        name :"G11",
+        place :"Đồng bằng nam bộ",
         time :"Mùa thu",
+        age :"Dưới 25 tuổi",
+    },
+    G12 ={
+        name :"G12",
+        place :"Đồng bằng nam bộ",
+        time :"Mùa đông",
+        age :"Dưới 25 tuổi",
+    },
+    G13 ={
+        name :"G13",
+        place :"Miền núi phía bắc",
+        time :"Mùa xuân",
         age : "Trên 25 tuổi",
     },
-    {
-        name: "G14",
-        place :"Duyên hải miền trung",
-        time :"Mùa thu",
+    G14 ={
+        name :"G14",
+        place :"Miền núi phía bắc",
+        time :"Mùa hạ",
         age : "Trên 25 tuổi",
     },
-    {
-        name: "G15",
+    G15 ={
+        name :"G15",
+        place :"Miền núi phía bắc",
+        time :"Mùa thu",
+        age :"Trên 25 tuổi",
+    },
+    G16 ={
+        name :"G16",
+        place :"Miền núi phía bắc",
+        time :"Mùa đông",
+        age :"Trên 25 tuổi",
+    },
+    G17 ={
+        name :"G17",
+        place :"Duyên hải miền trung",
+        time :"Mùa xuân",
+        age :"Trên 25 tuổi",
+    },
+    G18 ={
+        name :"G18",
+        place :"Duyên hải miền trung",
+        time :"Mùa hạ",
+        age :"Trên 25 tuổi",
+    },
+    G19 ={
+        name :"G19",
+        place :"Duyên hải miền trung",
+        time :"Mùa thu",
+        age :"Trên 25 tuổi",
+    },
+    G20 ={
+        name :"G20",
         place :"Duyên hải miền trung",
         time :"Mùa đông",
         age :"Trên 25 tuổi",
     },
-    {
-        name: "G16",
-        place :"Duyên hải miền trung",
-        time :"Mùa đông",
-        age :"Trên 25 tuổi",
-    },
-    {   name: "G17",
+    G21 ={
+        name :"G21",
         place :"Đồng bằng nam bộ",
         time :"Mùa xuân",
         age :"Trên 25 tuổi",
     },
-    {
-        name: "G18",
+    G22 ={
+        name :"G22",
         place :"Đồng bằng nam bộ",
-        time :"Mùa xuân",
+        time :"Mùa hạ",
         age :"Trên 25 tuổi",
     },
-    {
-        name: "G19",
-        place :"Đồng bằng nam bộ",
-        time :"Mùa hạ ",
-        age :"Trên 25 tuổi",
-    },
-    {
-        name: "G20",
-        place :"Đồng bằng nam bộ",
-        time :"Mùa hạ ",
-        age :"Trên 25 tuổi",
-    },
-   {
-         name: "G21",
+    G23 ={
+        name :"G23",
         place :"Đồng bằng nam bộ",
         time :"Mùa thu",
         age :"Trên 25 tuổi",
     },
-   {
-        name: "G22",
-        place :"Đồng bằng nam bộ",
-        time :"Mùa thu",
-        age :"Trên 25 tuổi",
-    },
-    { 
-        name: "G23",
+    G24 ={
+        name :"G24",
         place :"Đồng bằng nam bộ",
         time :"Mùa đông",
         age :"Trên 25 tuổi",
-    },
-    {
-        name: "G24",
-        place :"Đồng bằng nam bộ",
-        time :"Mùa đông",
-        age :"Trên 25 tuổi",
-    },
+    }
+
 ];
-
-
 let submit = document.getElementById('Submit')
-Submit.addEventListener("click", function(item) {
+submit.addEventListener("click", function(item) {
     let gettime = document.getElementById('Select-time')
     let getplace = document.getElementById('Select-place')
     let getage = document.getElementById('Select-age')
@@ -157,11 +157,16 @@ Submit.addEventListener("click", function(item) {
         time :gettime.value,
         age :getage.value,
     }
+    let find = travel.filter(function(item){
+             return item.place == want.place && item.time == want.time && item.age == want.age
+        
+    })
+    
     function check (find){
         if(find.length >=1)
         return find[0].name;
     }
     let num =check(find)
     console.log(num)
-
-})
+    })
+  
