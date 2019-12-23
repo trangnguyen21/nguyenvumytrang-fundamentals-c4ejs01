@@ -1,0 +1,28 @@
+
+
+  .product-row {
+    display: flex;
+    margin-bottom: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+ .product-image {
+    width: 55%;
+      flex: 1 1 45%;
+      padding-right: 5%;
+      margin-left: 100px;
+    }
+    img {
+      width: 600px;
+    }
+    .product-text {
+         position: relative;
+      width: 45%;
+      float: right;
+      flex: 1 1 55%;
+      max-width: 55%;
+    }
+    

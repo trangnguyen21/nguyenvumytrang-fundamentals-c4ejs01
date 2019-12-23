@@ -168,5 +168,10 @@ submit.addEventListener("click", function(item) {
     }
     let num =check(find)
     console.log(num)
-    })
-  
+    function on(num) {
+        document.getElementById('Matching-text').innerHTML =`<p>Nhóm ${num} làm lựa chọn của bạn</p>`
+        document.getElementById("overlay").style.display = "block";
+    }
+    on(num)
+})
+    
