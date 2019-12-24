@@ -654,6 +654,7 @@ section#contact :-ms-input-placeholder {
 .footer {
   padding: 25px 0;
   text-align: center;
+  background-color: black;
 }
 
 .footer span.copyright {
@@ -682,10 +683,10 @@ ul.social-buttons li a {
   width: 50px;
   height: 50px;
   transition: all 0.3s;
-  color: white;
+  color: black;
   border-radius: 100%;
   outline: none;
-  background-color: #212529;
+  background-color: white;
 }
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
@@ -715,52 +716,68 @@ video {
 }
 
 /* >---> Phần Địa điểm */
-p {
- font-size: 20px;
- padding-top: 5%;
- padding-bottom: 5%;
-}
-.location-container {
+#location-container {
   display: flex;
- padding: 100px;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+ padding: 10px;
+ }
+  .location-wrapper {
+    width: 1100px;
+    height: 600px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    flex-direction: row-reverse;
+    padding-top: 70px;
 }
+  
+  .location-image {
+    width: 50%;
+   
+  }
+  .location-image img {
+    width: 515px;
+    height: 500px;
+  }
+    .location-text {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    
+    }
+    .location-title {
+      color: black;
+      font-family:'Playfair Display', serif;
+      font-size: 60px;
+      margin-top: 30px;
 
-.image-container img {
-  float: left;
-  height: auto;
-  margin-right: 50px;
-}
-.text-container {
-  justify-content: left;
+    }
+    .location-content {
+      color: grey;
+      font-size: 19px;
+      font-family: 'Cabin', sans-serif;
+      line-height: 1.5;
+      
+  }
+  .read-more {
+    width: 130px;
+    height: 40px;
+    background: #FFAC3F;
+   font-weight: 700;
+   font-size: 16px;
+   text-align: center;
+   color: white;
+    line-height: 1.2;
+    transition: all 0.4s;
+   font-family: 'Montserrat', sans-serif;
+    border: none
+ }
 
-}
-.Example-1 {
-  font-family: 'Gelasio', serif;
-  margin-top: 30px;
-  font-size: 60px;
-  font-weight: bold;
-  color: black;
-}
-
-
-.Example-2 {
-  font-family: 'Noto Sans';
-  color: gray;
-  font-size: 22px;
-}
-.button2{
-  text-align: center;
-  background-color:#FFAC3F;
-  border: none;
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: bold;
-  padding: 15px 20px;
-}
-.image-container {
-  margin-left: 100px
-}
  /* >---> Phần Địa điểm 2.1*/
  #location-team{
   display:flex;
@@ -769,7 +786,8 @@ p {
    align-items: center;
    margin-left: 90px;
    margin-right: 90px;
-
+   margin-top: 40px;
+   margin-bottom: 60px;
 }
 .card1 {
   width: 30%;
@@ -823,22 +841,6 @@ p {
   color:#FFAC3F;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* <---> Phần review */
 * {box-sizing: border-box}
@@ -951,26 +953,42 @@ font-family: 'Cabin', sans-serif;
 }
 
 /* <---> Phần Kết nối */
-.matching-container {
- position: relative;
+#team1 {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ height: 100%;
+ margin-top: 50px;
+}
+ .matching-introduction {
+   align-items: center;
+      text-align: center;
+      margin-bottom: 70px;
+}
+.Example8 {
   text-align: center;
-  opacity: 1;
+  color: black;
+  font-family:'Playfair Display', serif;
+  font-size: 60px;
 }
-.matching-container img {
-  height: 900px;
+.Example9 {
+  text-align: center;
+  color: grey;
+  font-size: 22px;
+  font-family: 'Cabin', sans-serif;
+  line-height: 1.5;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
-.matching-container-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.matching-container {
+  position: relative;
+  text-align: center;
+  opacity: 0.8;
+  margin-bottom: 60px;
 }
-.matching-container-text h3 {
-  color: white;
-  font-size: 50px;
-  width: 100%;
-}
-.button3 {
+.button-match {
+  width: 150px;
+  height: 40px;
   text-align: center;
   background-color:#FFAC3F;
   border: none;
@@ -978,8 +996,13 @@ font-family: 'Cabin', sans-serif;
   text-decoration: none;
   font-size: 16px;
   font-weight: bold;
-  padding: 15px 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
+
 /* <--- Index-matching --> */
 .header-container-pic {
 position: absolute;
@@ -995,19 +1018,7 @@ overflow: hidden;
   opacity: 4;
   width: 100%;
 }
-.Example4 {
-  position: center;
-  text-align: center;
-  color: white;
-  font-display: 'Gelasio', serif;
-  font-size: 60px;
-  font-weight: bold;
-  font-style: italic;
-}
-.Example5 {
-  color: white;
-  text-align: center;
-}
+
 #overlay {
   position: fixed;
   display: none;

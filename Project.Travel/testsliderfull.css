@@ -1,28 +1,72 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.limiter {
+  width: 100%;
+  margin: 0 auto;
 
-
-  .product-row {
+}
+#location {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+ padding: 10px;
+ }
+  .location-wrapper {
+    width: 1140px;
+    height: 500px;
+    overflow: hidden;
     display: flex;
-    margin-bottom: 0;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+    flex-direction: row-reverse;
+  }
+  .location-image {
+    width: 50%;
+   
+  }
+  .location-image img {
+    width: 525px;
+    height: 500px;
+  }
+    .location-text {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
     
+    }
+    .location-title {
+      color: black;
+      font-family:'Playfair Display', serif;
+      font-size: 60px;
+      margin-top: 30px;
+
+    }
+    .location-content {
+      color: grey;
+      font-size: 19px;
+      font-family: 'Cabin', sans-serif;
+      line-height: 1.5;
+      margin-bottom: -20px;
+  }
+  .read-more {
+    width: 140px;
+    height: 40px;
+
+    background: #FFAC3F;
+   font-weight: 700;
+   font-size: 16px;
+   text-align: center;
+   color: white;
+    line-height: 1.2;
+    transition: all 0.4s;
+   font-family: 'Montserrat', sans-serif;
+    border: none;
   }
 
- .product-image {
-    width: 55%;
-      flex: 1 1 45%;
-      padding-right: 5%;
-      margin-left: 100px;
-    }
-    img {
-      width: 600px;
-    }
-    .product-text {
-         position: relative;
-      width: 45%;
-      float: right;
-      flex: 1 1 55%;
-      max-width: 55%;
-    }
-    
+

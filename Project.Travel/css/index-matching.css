@@ -1,0 +1,76 @@
+.matching-detailed-container {
+    width: 100%;
+    margin: 0 auto;
+
+
+   
+}
+#matching-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+
+}
+
+#form-matching {
+    background-color: lightgrey;
+    width: 1100px;
+    height: 500px;
+    background-image: url('https://wanderers.mikado-themes.com/wp-content/uploads/2018/03/h1-background-2.jpg');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    border: 5px grey;
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.16);
+}
+.select-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+}
+#inner-header {
+    font-family: 'Kristi', cursive;
+    font-size: 50px;
+    color: #FFAC3F;
+    margin-top: -25px;
+}
+
+#Select-time,
+#Select-place,
+#Select-age {
+    width: 80%;
+    height: 55px;
+    box-sizing: border-box;
+    color: grey;
+    background-color: white;
+    font-size: 16px;
+    font-family: 'Cabin', sans-serif;
+    border: 1px solid grey;
+    padding: 15px;
+}
+#Submit {
+    width: 80%;
+    height: 60px;
+   background: #FFAC3F;
+   font-weight: 700;
+   font-size: 19px;
+   color: white;
+    line-height: 1.2;
+    text-transform: uppercase;
+    transition: all 0.4s;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+      border: none
+
+}
+
+
+
+
+
+   
