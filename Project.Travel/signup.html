@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>SIGN-UP</title>
     <link rel="stylesheet" href="login1.css">
     <link href="https://fonts.googleapis.com/css?family=Kristi&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -20,14 +20,15 @@
  
           <div class="input-group1">
             <p id="Title-signup">Join our team</p>
-         <input id="name-input" type="name" placeholder="Họ tên">
+         <input id="name-input" type="name" placeholder="Họ tên" required>
         <br>  
-        <input id="email-input" type="email" placeholder="Địa chỉ Email">
+        <input id="email-input" type="email" placeholder="Địa chỉ Email" required>
       <br> 
-      <input id="username-input" type="text" placeholder="Tên người dùng">
+      <input id="username-input" type="text" placeholder="Tên người dùng" required>
         <br>   <input id="password-input" type="password" placeholder="Mật khẩu">
-        <br> <input id="password-input" type="password" placeholder="Nhập lại mật khẩu">
-        <br>        
+        <br> <input id="confilm" type="password" placeholder="Nhập lại mật khẩu" required>
+        <br>       
+        <div id="message-erro"></div> 
         <button id="signup-button">ĐĂNG KÝ</button>
    
 
@@ -38,6 +39,6 @@
 </div>
 
 </div>
-
+<script src="js\signup.js"></script>
 </body>
 </html>

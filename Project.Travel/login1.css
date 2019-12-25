@@ -76,7 +76,8 @@
     transition: all 0.4s;
     margin-top: 25px;
     font-family: 'Montserrat', sans-serif;
-    border: none
+    border: none;
+  
  }
  /* --- Fail login */
  .box1-pic-different {
