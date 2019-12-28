@@ -2,6 +2,10 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+  }
+body{
+  height: 100%;
+  width: 100%;
 }
 .limiter {
     width: 100%;
@@ -13,8 +17,9 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    background-color: lightgray;
     padding: 15px;
-    background: #f2f2f2;
+
   }
   
   .login-form {
@@ -26,6 +31,8 @@
     flex-wrap: wrap;
     align-items: stretch;
     flex-direction: row-reverse;
+    margin-top: 10%;
+    margin-bottom: 10%;
    }
    .box1 {
     width: 50%;
