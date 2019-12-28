@@ -20,7 +20,7 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
-    align-items: center;
+    text-align: center;
 }
 #location-team1 {
     display:flex;
