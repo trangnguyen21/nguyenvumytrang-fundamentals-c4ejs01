@@ -42,7 +42,7 @@ html{
     background-position: center;
     position: relative;
     z-index: 1;
-    background-image: url('Anh bi thieu/blog-post-1.jpg');
+    background-image: url(./Imageaddition/blog-post-1.jpg);
    }
  .box2 {
     width: 50%;
@@ -95,7 +95,7 @@ html{
    background-position: center;
    position: relative;
    z-index: 1;
-   background-image: url('Anh bi thieu/blog-post-2.jpg');
+   background-image: url(./Imageaddition/blog-post-2.jpg);
   }
   #fail-button {
    width: 80px;

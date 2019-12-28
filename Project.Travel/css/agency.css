@@ -849,7 +849,7 @@ body {
 }
 .blogreview-container { 
   margin: auto;
-  background-image: url('Anh bi thieu\destination-3-1100x550.jpg');
+  background-image: url(../Imageaddition/destination-3-1100x550.jpg);
    height: 500px;
   background-position: center;
   background-repeat: no-repeat;

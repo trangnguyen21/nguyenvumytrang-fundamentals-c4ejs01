@@ -9,6 +9,23 @@ getSignUp.addEventListener('click',function(item){
         password :document.getElementById('password-input').value,
         confilmpassword :document.getElementById('confilm').value
     }
+    /*---------CHECK-EMAIL--------*/
+    const mail =document.getElementById('email-input')
+        function ValidateEmail(inputText){
+            var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            if(inputText.value.match(mailformat))
+            {
+                return true;
+            }
+            else{
+                mail.value=''
+                return false;
+            }
+    } 
+    const checks=ValidateEmail(mail)
+
+    /*---------END-CHECK EMAIL---*/
+
     /*---------CHECK-INPUT--------*/
     function Check(user){
         if(user.Name =="" || user.email =="" || user.UserName=="" || user.password==""|| user.confilmpassword==""){
@@ -20,7 +37,7 @@ getSignUp.addEventListener('click',function(item){
     /*-------------------------------*/
 
     const check=Check(user)
-    if(check ==1){
+    if(check ==1 &&checks){
         /*-------SOSANH PASSWORD VS CONFILM PASSWORD-----*/
         if(user.password ==user.confilmpassword){
             /*------------GET DATA SOSANH INPUT-EMAIL ----------*/
