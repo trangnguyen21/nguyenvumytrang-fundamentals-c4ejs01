@@ -1,0 +1,51 @@
+#location-detail-wrapper {
+  padding: 125px;
+  align-items: justify;
+  padding-bottom: 30px;
+}
+.location-detail-header {
+    color: black;
+      font-family:'Playfair Display', serif;
+      font-size: 40px;
+      margin-top: -40px;
+
+}
+.location-detail-content {
+    color: grey;
+      font-size: 19px;
+      font-family: 'Cabin', sans-serif;
+      line-height: 1.5;
+}
+.location-detail-pic {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+}
+#location-team1 {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+     align-items: center;
+     margin-top: 40px;
+     margin-bottom: 60px;
+ }
+ .card2 {
+    width: 31.5%;
+    height: 487px;
+    overflow: hidden;
+    position: relative;
+    margin:0 2% 2% 0;
+  
+  }
+  .card2:nth-of-type(3n){
+    margin-right:0;
+  }
+  .card2 img {
+    width: 100%;
+    min-height:100%;
+    transition:all 0.9s
+  }
+  .card2:hover img{
+   transform:scale(1.2,1.2)
+  }

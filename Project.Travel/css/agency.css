@@ -735,11 +735,11 @@ video {
     padding-top: 70px;
 }
   
-  .location-image {
+  .location-content-image {
     width: 50%;
    
   }
-  .location-image img {
+  .location-content-image img {
     width: 515px;
     height: 500px;
   }
@@ -849,7 +849,7 @@ body {
 }
 .blogreview-container { 
   margin: auto;
-  background-image: url('https://wanderers.mikado-themes.com/wp-content/uploads/2018/03/destination-3-1100x550.jpg');
+  background-image: url('Anh bi thieu\destination-3-1100x550.jpg');
    height: 500px;
   background-position: center;
   background-repeat: no-repeat;
