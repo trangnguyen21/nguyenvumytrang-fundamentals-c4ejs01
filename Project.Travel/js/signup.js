@@ -1,7 +1,7 @@
 let getSignUp =document.getElementById('signup-button')
 getSignUp.addEventListener('click',function(item){
-    item.preventDefault();  // block out reset page
-    let getErro =document.getElementById('message-erro')
+    item.preventDefault();
+    /*---------------------------------------------*/
     let user ={
         Name :document.getElementById('name-input').value,
         email :document.getElementById('email-input').value,
@@ -9,56 +9,79 @@ getSignUp.addEventListener('click',function(item){
         password :document.getElementById('password-input').value,
         confilmpassword :document.getElementById('confilm').value
     }
-
-    if(user.password ==user.confilmpassword){
-    async function data(user){
-        let request =await fetch('http://5dfe28f303f98e0014e92871.mockapi.io/api/v1/user')
-        let data =await request.json()
-        let find =data.filter(function(item){
-            return item.email ==user.email
-        })
-        if(find.length !=0){
-            window.location.href="file:///C:/Users/admin/Desktop/Javascript%20Mindx/Fundamentals/Project.Travel/login3.html?"
-        }else {return 100}
+    /*---------CHECK-INPUT--------*/
+    function Check(user){
+        if(user.Name =="" || user.email =="" || user.UserName=="" || user.password==""|| user.confilmpassword==""){
+            return 0; 
+        }else{
+            return 1;
+        }
     }
-    async function postdata(user){
-        const check =await data(user)
-        if(check ==100){
-        const setting ={
-            method:"POST",
-            body :JSON.stringify(user),
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json',
+    /*-------------------------------*/
+
+    const check=Check(user)
+    if(check ==1){
+        /*-------SOSANH PASSWORD VS CONFILM PASSWORD-----*/
+        if(user.password ==user.confilmpassword){
+            /*------------GET DATA SOSANH INPUT-EMAIL ----------*/
+            async function data(user){
+                let request =await fetch('http://5dfe28f303f98e0014e92871.mockapi.io/api/v1/user')
+                let data =await request.json()
+                let find =data.filter(function(item){
+                    return item.email ==user.email
+                })
+                if(find.length !=0){
+                    /* email used*/
+                    window.location.href="login3.html"
+                }else {return 100}
             }
-        }
-        
-        const response =await fetch('http://5dfe28f303f98e0014e92871.mockapi.io/api/v1/user',setting)
-        if (!response.ok) throw Error(response.message);
-        
-        try {
-            const data = await response.json();
-            return data;
-        }
-        catch (err) {
-             throw err;
-        }
-        
-        }else {
-            return 0;
-        }
+            /*---------------------------------------------------*/
+            
+            async function postdata(user){
+                const check =await data(user)
+                if(check ==100){
+                const setting ={
+                    method:"POST",
+                    body :JSON.stringify(user),
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json',
+                    }
+                }
+                /*---------------POST DATA ->API--------------*/
+                const response =await fetch('http://5dfe28f303f98e0014e92871.mockapi.io/api/v1/user',setting)
+                if (!response.ok) throw Error(response.message);
+                
+                try {
+                    const data = await response.json();
+                    return data;
+                }
+                catch (err) {
+                    throw err;
+                }
+                
+                }else {
+                    return 0;
+                }
+            }
 
-    }
-    async function getpost(){
-        let resutl =await postdata(user)
-        if(resutl !=0){
-            window.location.href="file:///C:/Users/admin/Desktop/Javascript%20Mindx/Fundamentals/Project.Travel/login1.html"
-        }
-    }
-    data(user)
-    getpost()
-}else{
-    window.location.href="file:///C:/Users/admin/Desktop/Javascript%20Mindx/Fundamentals/Project.Travel/login3.html?"
-}
+            /*-----------SIGNUP SUCCESS------------------*/
 
+            async function getpost(){
+                let resutl =await postdata(user)
+                if(resutl !=0){
+                    window.location.href="login1.html"
+                }
+            }
+            data(user)
+            getpost()
+
+            /* ---case password != confilmlpassword------*/
+            }else{
+                let password=document.getElementById('confilm')
+                password.value=""
+            }
+        }else{
+            console.log("hehe")
+        }
 })

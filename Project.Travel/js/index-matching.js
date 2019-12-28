@@ -1,5 +1,4 @@
-$('#exampleModalCenter').modal('show');
-
+// $('#exampleModalCenter').modal('show');
 const travel =[
     G1 ={
         name :"G1",
@@ -147,8 +146,11 @@ const travel =[
     }
 
 ];
+
+/*---------------------------------------*/
+
 let submit = document.getElementById('Submit')
-submit.addEventListener("click", function(item) {
+submit.addEventListener("click", function(){
     let gettime = document.getElementById('Select-time')
     let getplace = document.getElementById('Select-place')
     let getage = document.getElementById('Select-age')
@@ -157,21 +159,54 @@ submit.addEventListener("click", function(item) {
         time :gettime.value,
         age :getage.value,
     }
-    let find = travel.filter(function(item){
-             return item.place == want.place && item.time == want.time && item.age == want.age
+    /*-----check input -----*/
+    function check (want){
+        if(want.place =="" ||want.time ==""||want.age ==""){
+            return 0;
+        }else{
+            return 1;
+        }
+    }
+    const Check =check(want)
+    /*----------------------------*/
+
+    if(Check ==1){
+        let find = travel.filter(function(item){
+                return item.place == want.place && item.time == want.time && item.age == want.age
+            
+        })
         
-    })
-    
-    function check (find){
-        if(find.length >=1)
-        return find[0].name;
+        function check (find){
+            if(find.length >=1)
+            return find[0].name;
+        }
+        let num =check(find)
+        
+        function on(num) {
+            console.log(num)
+            document.getElementById('overlay').innerHTML =`
+            <div id="text">
+                <h1 id="travel">Congrats</h1>
+                <br>
+                <p id="congrats">Chúng tôi đã tìm thấy nhóm <strong>${num}</strong> là nhóm phù hợp với bạn. Bạn hãy đọc thông tin chi tiết về nhóm nhé.
+                </p>
+                
+                <ul id="optionbut">
+                    <li ><a href="index-matching.html"         target="_blank"><button class="ok"> BACK</button></a></li>          
+                    <li><a href="index-team.html"><button class="oki"> NEXT</ button></  a></li>
+                </ul>
+            </div>
+            `
+            document.getElementById('mainNav').style.display="none";
+            document.getElementById("overlay").style.display = "block";
+        }
+        on(num)
     }
-    let num =check(find)
-    console.log(num)
-    function on(num) {
-        document.getElementById('Matching-text').innerHTML =`<p>Nhóm ${num} làm lựa chọn của bạn</p>`
-        document.getElementById("overlay").style.display = "block";
-    }
-    on(num)
 })
-    
+
+let close =document.getElementById("overlay")
+close.addEventListener("click",function(){
+    close.style.display="none"
+    window.location.href="index-matching.html"
+    document.getElementById('mainNav').style.display="block";
+})
